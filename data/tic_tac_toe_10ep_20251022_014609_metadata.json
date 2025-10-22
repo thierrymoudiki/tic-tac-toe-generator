@@ -1,0 +1,47 @@
+{
+  "generation_timestamp": "20251022_014609",
+  "n_episodes": 10,
+  "strategy_level": 0.6,
+  "include_advanced_features": true,
+  "total_moves": 71,
+  "game_stats": {
+    "x_wins": 5,
+    "o_wins": 3,
+    "draws": 2,
+    "total_moves": 71
+  },
+  "columns": [
+    "episode",
+    "step",
+    "cell_0",
+    "cell_1",
+    "cell_2",
+    "cell_3",
+    "cell_4",
+    "cell_5",
+    "cell_6",
+    "cell_7",
+    "cell_8",
+    "player",
+    "x_count",
+    "o_count",
+    "empty_count",
+    "action",
+    "player_symbol",
+    "reward",
+    "done"
+  ],
+  "feature_descriptions": {
+    "episode": "Game identifier (0 to n_episodes-1)",
+    "step": "Move number within game (0-based)",
+    "cell_0 to cell_8": "Board positions: 0=empty, 1=X, 2=O",
+    "player": "Current player: 1=X, 2=O",
+    "x_count": "Number of X pieces on board",
+    "o_count": "Number of O pieces on board",
+    "empty_count": "Number of empty positions",
+    "action": "Move made (0-8 board position)",
+    "player_symbol": "Player as symbol: X or O",
+    "reward": "Game outcome: 1=X win, -1=O win, 0=draw",
+    "done": "Game ended: 1=true, 0=false"
+  }
+}

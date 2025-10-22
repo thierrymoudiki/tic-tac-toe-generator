@@ -380,16 +380,19 @@ def demonstrate_generator():
 # Quick usage example
 def quick_start():
     """Quick start example for immediate use"""
-    config = GameConfig(n_episodes=1000)  # Change to 10000 for production
+    config = GameConfig(n_episodes=10)  # Change to 10000 for production
     generator = TicTacToeGenerator(config)
     dataset = generator.generate_dataset()
     return dataset
 
 
 if __name__ == "__main__":
-    # Run demonstration
-    generator, dataset = demonstrate_generator()
-    
-    print(f"\n🎯 Your dataset is ready!")
-    print(f"   Use: dataset = quick_start() to generate a new dataset")
-    print(f"   Or customize: config = GameConfig(n_episodes=10000, ...)")
+    # Run demonstration 1 
+    #generator, dataset = demonstrate_generator()    
+    #print(f"\n🎯 Your dataset is ready!")
+    #print(f"   Use: dataset = quick_start() to generate a new dataset")
+    #print(f"   Or customize: config = GameConfig(n_episodes=10000, ...)")
+
+    # Run demonstration 2
+    quick_start()
+
